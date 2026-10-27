@@ -1,4 +1,4 @@
-# 🏥 CarePilot AI — Healthcare Companion
+# 🏥 CarePilot AI — Healthcare Companion 
 
 A healthcare companion prototype built with **Python and Streamlit** that helps users explore general health information, prepare for doctor appointments, track symptoms, and plan healthier daily routines.
 
