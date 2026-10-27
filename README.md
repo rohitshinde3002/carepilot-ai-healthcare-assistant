@@ -1,45 +1,80 @@
-# CarePilot AI — Healthcare Companion Prototype
+# 🏥 CarePilot AI — Healthcare Companion
 
-Prepared for the **AI Growth & Automation Associate — Task 1: AI Skills & Prompt Engineering Assessment**.
+A healthcare companion prototype built with **Python and Streamlit** that helps users explore general health information, prepare for doctor appointments, track symptoms, and plan healthier daily routines.
 
-## Features
-- AI Health Guide: general health Q&A interface, offline guide, and optional live Groq language-model responses.
-- Appointment Planner: session-local appointment-preparation topics and CSV export. It does not book real appointments.
-- Wellness Planner: interactive habit checklist and text download.
-- Project & Submission: requirement mapping and final checklist.
+🔗 **GitHub Repository:** https://github.com/rohitshinde3002/carepilot-ai-healthcare-assistant
 
-## Safety and limitations
-Educational prototype, not a medical device. It does not diagnose or prescribe. Do not enter identifying or confidential medical information. Planner data is held only in the current session. Live AI requires your own API key; without it, offline guidance is shown.
+🌐 **Live Demo:** https://rohitshinde3002-carepilot-ai-healthcare-assistant-app-9wztbg.streamlit.app/
 
-## Run on Windows / VS Code
-1. Extract ZIP and open folder in VS Code.
-2. Run in PowerShell:
-   ```powershell
-   py -m venv .venv
-   .\.venv\Scripts\Activate.ps1
-   ```
-   If activation is blocked:
-   ```powershell
-   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-   .\.venv\Scripts\Activate.ps1
-   ```
-3. Install and launch:
-   ```powershell
-   python -m pip install --upgrade pip
-   pip install -r requirements.txt
-   streamlit run app.py
-   ```
+## ✨ Features
 
-## Optional live AI
-Create `.streamlit/secrets.toml` containing:
-```toml
-GROQ_API_KEY = "your_own_key_here"
+- 🩺 **AI Health Guide:** Explore general health guidance with built-in offline guides.
+- 📋 **Appointment Planner:** Organize information and questions before visiting a doctor.
+- 📈 **Symptom Tracking Guidance:** Learn what symptom details to record and discuss with a healthcare professional.
+- 🌿 **Wellness Planner:** Build healthier daily habits and routines.
+- 📥 **Export Support:** Save supported planner information for personal reference.
+- 🔒 **Privacy Awareness:** Avoid entering personal identifiers or sensitive medical information.
+
+## 🛠️ Tech Stack
+
+- Python
+- Streamlit
+- Pandas
+- Groq integration (optional)
+
+## 🚀 Run Locally
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/rohitshinde3002/carepilot-ai-healthcare-assistant.git
+cd carepilot-ai-healthcare-assistant
 ```
-Restart Streamlit. Never upload the key to GitHub. Test with a general non-sensitive question. Provider/model access can change; update the model identifier in `app.py` if needed.
 
-## Submission requirements from the supplied PDF
-1. Minimum 2-minute video covering AI tools/why, prompt revisions, approach, challenges/solutions, and final outcome.
-2. Prompt documentation with all actual prompts and significant revisions (`prompts.md`).
-3. Accessible project link (GitHub, live app, or public Drive). If not hosted, provide files and run instructions.
+**2. Create a virtual environment**
 
-See `ASSESSMENT_REQUIREMENTS.md` and `VIDEO_DEMO_SCRIPT.md`.
+```bash
+python -m venv .venv
+```
+
+**3. Activate it on Windows**
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+**4. Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+**5. Start the application**
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your browser.
+
+## 🤖 AI Integration
+
+The project includes built-in general health guides that work without an API key. Optional Groq integration can be configured for live AI responses.
+
+## 🎯 Project Purpose
+
+This project demonstrates practical Python development, AI-assisted application building, prompt engineering, Streamlit UI development, and responsible use of AI in a healthcare-related educational prototype.
+
+## ⚠️ Medical Disclaimer
+
+CarePilot AI is an educational prototype. It does not diagnose diseases, prescribe treatments, or replace a qualified healthcare professional. For emergencies, contact your local emergency services.
+
+## 👨‍💻 Author
+
+**Rohit Shinde**
+
+GitHub: [@rohitshinde3002](https://github.com/rohitshinde3002)
+
+---
+
+⭐ If you find this project interesting, consider giving the repository a star!
